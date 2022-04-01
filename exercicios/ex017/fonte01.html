@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+        body{
+            font-family: 'Titillium Web', sans-serif;
+            /* Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas relativas
+            em, ex, rem, vw, vh, %
+            */
+
+            font-size: 16px; 
+            /* A W3C (World Wide Web Consortium), responsável pelas linguagens HTML e CSS recomenda a utilização das medidas px (absoluta) e em (relativa) para trabalhar com font-size */
+
+            /* Normalmente os navegadores tem o tamanho padrão das fontes como 16px. (16px = 1em) */
+            
+            font-weight: normal;
+            /* A propriedade font-weight pode ter 4 valores, sendo eles: lighter, normal, bold e bolder.
+            Podemos também definir o peso de 100 até 900.
+            */
+
+            font-style: italic; 
+            /* font-style: italic, normal */
+
+            /* shorhand font
+            - font-style -> font-weight -> font-size -> font-family
+            */
+        }
+
+        h1{
+            font: normal 900 2.5em 'Titillium Web';
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ao inserir uma font family, sempre que a fonte tiver nome composto deve-se utilizar aspas (podendo ser aspas simples ou duplas) entre o nome da fonte -->
+    <!-- O ideal é sempre utilizar uma combinação de fontes seguras (safe font combination), o que significa que o navegador utilizará a primeira fonte disponível, ou seja, se a primeira fonte escolhida não estiver disponível, ele utilizará a segunda fonte (caso esteja disponível) e assim consecutivamente -->
+    <!-- Há 3 fontes genéricas que podem ser utilizadas para todos os leitores de navegação, sendo elas: sans-serif, serif e monospace. O navegador escolherá uma fonte genérica dentro da categoria de fontes (sans-serif, serif, monospace) -->
+
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum consectetur eaque eveniet aperiam, doloribus eius sunt magni possimus quidem corrupti cumque optio similique harum obcaecati corporis pariatur a ipsa eos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero incidunt a ab nostrum! In eveniet, reiciendis obcaecati repellendus officia veritatis iusto accusantium omnis illo quas. Cum tenetur provident quo at!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ullam velit, veniam harum non totam inventore qui modi vitae adipisci dolore pariatur veritatis incidunt, odio, ex architecto voluptate deserunt reprehenderit.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sit, laborum maiores odio blanditiis similique inventore eum aperiam aut facilis voluptates adipisci laudantium nesciunt quis cum fugiat. Dolorem, eius quae.</p>
+
+</body>
+</html>
